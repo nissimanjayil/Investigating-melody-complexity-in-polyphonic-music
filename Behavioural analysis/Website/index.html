@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis App</title>
+    <link rel="stylesheet" href="style.css" />
+   
+</head>
+<body>  
+
+    
+    <form id="form1" name="form1">
+        <div class = "home-box custom-box "> 
+            <label >Name</label>
+            <input id ="myname"type ="text" name ="Name" placeholder="Please type your name" />
+    
+            <h3>Instructions</h3>
+            <p>Task:</p>
+            <p>1)listen to first audio</p>
+            <p>2)hum the tune out loud that is memorable(please do this out-loud, that is really important)</p>
+            <p>3)listen to the second audio<p>
+            
+            
+            <p>Total number of Audio files:<span class ="total-question">24</span></p>
+            <p>Thank you </p>
+
+            <button type="button" id="start" onclick = getStarted()>start</button>  
+            <span role="alert" id="nameError" aria-hidden="true">
+                Please type your name
+              </span>
+            
+        </div>
+    </form>
+    
+    <form id="form2" name="form2" >
+        
+        <div class = "analysis-box custom-box hide">
+            <div class="audio-number"></div>
+
+            <div class = "original-audio">
+                <audio id="audio" name =""src="" controls="autoplay" type ="audio/wav">
+                </audio>
+            </div>
+            <div class = "melody-audio">
+                <h4>Is this the melody tune? </h4>
+                <audio id="melody" src="" controls="autoplay">
+                </audio>
+    
+            </div>
+            
+            <div class="rating">
+                <h4>Please indicate a score  1,3 or 5</h4>
+                <h4>1:- definitely not the melody I hummed</h4>
+                <h4>3:- a bit like the melody I hummed</h4>
+                <h4>5:- it is exactly the melody I hummed</h4>
+                <span role="alert" id="scoreError" aria-hidden="true">
+                    Please type the score (1,3 or 5 )
+                  </span>
+                <input id ="myrating" type ="text" name ="rating" placeholder="Please type the score"/>
+               
+                  
+                <div class = "next-audio-btn">
+                    <button type="button" name="btn" onclick=next()>Next</button>
+                </div> 
+               
+                
+            </div>
+          
+    
+        </div>
+        
+    </form>
+    <div class = "submission-box custom-box hide">
+        <h1>Thank you</h1>
+        <h2>Submission received</h2>
+    </div>
+    
+
+    <script   src="data.js"></script>
+    <script  src="app.js"></script>
+
+</body>
+</html>

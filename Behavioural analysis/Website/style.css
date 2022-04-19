@@ -1,0 +1,27 @@
+
+ .custom-box.hide{
+    display: none;
+}
+#nameError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #nameError.visible {
+    display: block;
+  }
+  
+
+  #scoreError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #scoreError.visible {
+    display: block;
+  }
+  
+  input.invalid {
+    border-color: red;
+  }
+  
