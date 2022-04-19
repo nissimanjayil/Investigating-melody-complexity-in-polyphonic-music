@@ -10,3 +10,9 @@ one based merely on signal processing while the latter based on signal processin
 Behavioural analysis: Code for the behavioural analysis website, the data acquired from this anlaysis and the plots
 
 Computational analysis: Code for the evaluation pipeline for both algorithms, the data acquired for the correlations and the melody complexity plots
+
+Dataset: The data collected for different genres:
+
+https://freemidi.org/
+https://www.kaggle.com/datasets/soumikrakshit/classical-music-midi
+https://www.bachcentral.com/
