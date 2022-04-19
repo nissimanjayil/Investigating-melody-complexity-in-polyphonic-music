@@ -1,5 +1,5 @@
 
-Code repository for my dissertation : " Investigating melody complexity in polyphonic-music" 
+Code repository for my dissertation : " Investigating melody complexity in polyphonic music" 
 
 
 This study aims to assess the complexity of melody extracted by two state-of-art algorithms through a computational pipeline that iteratively removes 
